@@ -1,0 +1,313 @@
+.vehicle-detail-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.vehicle-overview {
+  margin-bottom: 2rem;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.overview-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.vehicle-subtitle {
+  color: var(--secondary);
+  font-size: 1.125rem;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-label {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.item-value {
+  font-size: 1.125rem;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.problem-section {
+  padding: 1.5rem;
+  background: #fffbeb;
+  border-left: 4px solid var(--warning);
+  border-radius: 4px;
+}
+
+.problem-section h3 {
+  margin-bottom: 0.75rem;
+  color: var(--dark);
+}
+
+.problem-section p {
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Defects Section */
+.defects-section,
+.history-section {
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+.add-defect-form {
+  padding: 1.5rem;
+  background: var(--light);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.image-upload-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.upload-button:hover {
+  background: #2563eb;
+}
+
+.image-preview-small {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+}
+
+.image-preview-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-remove-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  background: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.btn-remove-image:hover {
+  background: #dc2626;
+}
+
+.defects-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.defect-item {
+  padding: 1.25rem;
+  background: var(--light);
+  border-left: 4px solid var(--danger);
+  border-radius: 6px;
+}
+
+.defect-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.defect-type {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--danger);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.ai-badge {
+  padding: 0.25rem 0.75rem;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.defect-content {
+  margin-bottom: 0.75rem;
+}
+
+.defect-location {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.defect-description {
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.defect-image {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.defect-footer {
+  color: var(--secondary);
+  font-size: 0.875rem;
+}
+
+/* History Section */
+.history-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.history-item {
+  padding: 1.25rem;
+  background: var(--light);
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.service-cost {
+  color: var(--success);
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.service-mechanic,
+.service-notes {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.service-footer {
+  color: var(--secondary);
+  font-size: 0.875rem;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 2rem;
+  color: var(--secondary);
+}
+
+.error-page {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .detail-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    flex-direction: column;
+  }
+
+  .overview-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .defect-image {
+    max-width: 100%;
+  }
+}
