@@ -617,7 +617,7 @@ Para reportar bugs o solicitar features:
 
 <div align="center">
 
-**Desarrollado con ❤️ por [Sergio](https://github.com/sergiodev3)**
+**Desarrollado con ☕ por [Sergiodev3](https://github.com/sergiodev3)**
 
 ⭐ Si te gusta este proyecto, dale una estrella en GitHub!
 
